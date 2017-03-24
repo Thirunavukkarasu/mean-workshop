@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MovieApp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Movie App</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div ng-include='"app/nav.tpl.html"'></div>
+		<div class="container">
+			<ui-view></ui-view>
+		</div>
+
+		<!-- Vendor files -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+		<!-- App specific files-->
+		<script src="app/app.js"></script>
+		<script src="app/home/home.js"></script>
+		<script src="app/about/about.js"></script>
+		<script src="app/services/services.js"></script>
+	</body>
+</html>

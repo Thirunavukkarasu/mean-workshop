@@ -1,0 +1,10 @@
+<div class="row">
+	<div class="col-md-3">
+		<ul class="nav nav-pills nav-stacked" ng-repeat="detail in aboutDetails">
+		  <li ui-sref-active="active" ui-sref="about.detail({ detailId: detail.id })"><a>{{detail.type}}</a></li>
+		</ul>	
+	</div>
+	<div class="col-md-9">
+		<ui-view></ui-view>
+	</div>
+</div>
